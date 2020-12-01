@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+
+        <!-- Icon -->
+        <div class="fadeIn first">
+            <img src="images/logo.png" id="icon" alt="User Icon" />
+        </div>
+
+        <!-- Login Form -->
+        <form action="/reg" method="post">
+            <input type="text"  name="ime" class="fadeIn second" placeholder="Ime">
+            <input type="text"  name="prezime" class="fadeIn second" placeholder="Prezime">
+            <input type="text" name="email" class="fadeIn second" placeholder="E-mail">
+            <input type="text"  name="brojtelefona" class="fadeIn third" placeholder="Broj Telefona">
+            <input type="text"  name="datumrodjenja" class="fadeIn third" placeholder="Datum Rodjenja">
+            <input type="password"  name="sifra" class="fadeIn third" placeholder="Sifra">
+            <input type="submit" class="fadeIn fourth" value="Potvrdi registraciju">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="underlineHover" href="/login">Vrati se na prijavu</a>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+    <script type="text/javascript" src="/jquery.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.js"></script>
+</body>
+</html>

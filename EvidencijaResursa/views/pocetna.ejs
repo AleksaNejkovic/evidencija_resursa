@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<style type="text/css">
+    body{
+        background-color: white!important;
+    }
+</style>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center" style=" background-color: #e3f2fd!important;">
+        <a class="navbar-brand" href="" style="margin: 0px; color: rgb(0, 91, 127)!important;" >Evidencija resursa</a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: rgb(0, 91, 127)!important;" href="<%=link%>">Početna </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="<%=link1%>" style="color: rgb(0, 91, 127)!important;">Pravila iznajmljivanja</a>
+                </li>
+
+
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0 justify-content-center">
+
+                <a href="http://localhost:3000/login" class="btn btn-info btn-lg" style="width: 136.672px;background-color: #56baed!important; border: none; ">
+                    <span class="glyphicon glyphicon-log-out"></span> Odjavi se
+                </a>
+
+            </form>
+
+        </div>
+    </nav>
+    <center>
+    <div class="container justify-content-center my-5">
+        <div class="row justify-content-center my-5">
+
+            <div class="col-sm my-4 okvir justify-content-center">
+                <div class="row justify-content-center">
+                    <img src="/images/laptop.png" class="slika">
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/rezervisilaptop/<%=id%>" method="post">
+                        <input type="submit" id="laptop" class="dugmici" value="Uzmi predmet">
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/opislaptopa/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Opis predmeta">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-sm my-4 okvir justify-content-center">
+                <div class="row justify-content-center">
+                    <img src="/images/desktop.png" class="slika" style="width: 17em!important;">
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/rezervisidesktop/<%=id%>" method="post">
+                        <input type="submit" id="laptop" class="dugmici" value="Uzmi predmet">
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/opisdesktopa/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Opis predmeta">
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="col-sm my-4 okvir justify-content-center">
+                <div class="row justify-content-center">
+                    <img src="/images/speakers.png" class="slika" style="width: 20em!important;">
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/rezervisispeakers/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Uzmi predmet">
+                    </form>
+
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/opiszvucnika/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Opis predmeta">
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-sm my-4 okvir justify-content-center">
+                <div class="row justify-content-center">
+                    <img src="/images/chair.png" class="slika" style="width: 12em!important;">
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/rezervisichair/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Uzmi predmet">
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/opisstolice/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Opis predmeta">
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-sm my-4 okvir justify-content-center">
+                <div class="row justify-content-center">
+                    <img src="/images/desk.png" class="slika" style="width: 18em!important;">
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/rezervisidesk/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Uzmi predmet">
+                    </form>
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/opisstola/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Opis predmeta">
+                    </form>
+                </div>
+
+            </div>
+            <div class="col-sm my-4 okvir justify-content-center">
+                <div class="row justify-content-center">
+                    <img src="/images/tv.png" class="slika" style="width: 17em!important;">
+                </div>
+                <div class="row justify-content-center">
+                    <form action="/rezervisitv/<%=id%>" method="post" >
+                        <input type="submit" class="dugmici" value="Uzmi predmet">
+                    </form>
+                </div>
+                <div class="row justify-content-center ">
+                    <form action="/opistv/<%=id%>" method="post">
+                        <input type="submit" class="dugmici" value="Opis predmeta">
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+        <div class="container justify-content-center my-5">
+            <div class="row justify-content-center my-5">
+
+                <table class="table table-dark table-responsive-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">Ime predmeta</th>
+                        <th scope="col">Datum uzimanja</th>
+                        <th scope="col">Ime iznajmljivaca</th>
+                        <th scope="col">Vrati predmet</th>
+
+                    </tr>
+                    </thead>
+                    <% data.forEach(function(x) { %>
+                    <tbody>
+
+                    <tr>
+
+                        <td><%=x.ime_predmeta%></td>
+                        <td><%=x.datum_uzimanja%></td>
+                        <td><%=x.ime%></td>
+                        <td><a href="/vratipredmet/<%=x.id%>" ><i class="fas fa-trash-alt"></i></a></td>
+
+                    </tr>
+
+                    </tbody>
+                    <% }) %>
+                </table>
+
+            </div>
+        </div>
+    </center>
+
+
+    <script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+</body>
+</html>

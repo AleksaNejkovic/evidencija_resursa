@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<body>
+
+
+<div class="container justify-content-center my-5">
+    <div class="row justify-content-center my-5">
+
+        <table class="table table-dark table-responsive-sm">
+            <thead>
+            <tr>
+                <th scope="col">Ime predmeta</th>
+                <th scope="col">Datum uzimanja</th>
+                <th scope="col">Datum vracanja</th>
+                <th scope="col">Ime iznajmljivaca</th>
+
+
+            </tr>
+            </thead>
+            <% data.forEach(function(x) { %>
+            <tbody>
+
+            <tr>
+
+                    <td><%=x.ime_predmeta%></td>
+                    <td><%=x.datum_uzimanja%></td>
+                    <td><%=x.datum_uzimanja%></td>
+                    <td><%=x.ime%></td>
+
+
+            </tr>
+
+            </tbody>
+                <form action="/pocetna/<%=x.idkor%>">
+
+
+            <% }) %>
+        </table>
+            <input type="submit" value="Povratak na pocetnu">
+        </form>
+
+
+    </div>
+</div>
+
+<script type="text/javascript" src="/jquery.js"></script>
+<script type="text/javascript" src="/js/bootstrap.js"></script>
+</body>
+</html>
